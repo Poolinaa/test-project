@@ -1,0 +1,39 @@
+$color-bg:            #e6f3f0;
+$color-logo:          #294367;
+$color-text:          #000000;
+$color-text-muted:    #8f8f8f;
+$color-benefits-bg:     #e4edf2;
+$color-benefits-border: #759bad;
+$color-bullet:          #548fac;
+$card-default-bg:      #ffffff;
+$card-default-border:  #cdd4ca;
+$card-selected-bg:     #87bad7;
+$card-selected-border: #4881a2;
+$card-pressed-bg:      #3d86b0;
+$card-pressed-border:  #315e79;
+$btn-default-bg:      #d2a06c;
+$btn-default-border:  #9b6934;
+$btn-default-shadow:  #d2c4b5;
+$btn-pressed-bg:      #b2824f;
+$btn-pressed-border:  #674623;
+$btn-pressed-shadow:  #825e37;
+$stage-bg: #444444;
+
+$frame-width:    390px;
+$frame-padding:  32px;
+$frame-gap:      24px;
+$radius:         12px;
+$card-height:    58px;
+$card-pad:       20px;
+
+@mixin btn-shadow($color) {
+  box-shadow: -2px 5px 0 1px $color;
+}
+
+$bp-stage: 480px;
+
+@mixin stage-up {
+  @media (min-width: $bp-stage) {
+    @content;
+  }
+}
